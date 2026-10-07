@@ -1,0 +1,2 @@
+# scrappaper
+simulación. primer boceto
