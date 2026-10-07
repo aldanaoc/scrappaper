@@ -3,3 +3,17 @@
     margin: 0;
     padding: 0;
 }
+.fuentes{
+  font-family: "Alkalami", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+body{
+    background-color: #fefcf0;
+    background: url(img/fondo.png);
+}
