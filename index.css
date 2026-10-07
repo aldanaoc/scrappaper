@@ -1,8 +1,4 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 .fuentes{
   font-family: "Alkalami", serif;
   font-weight: 400;
@@ -13,13 +9,169 @@
   font-weight: 200;
   font-style: normal;
 }
-body{
-    background-color: #fefcf0;
-    background: url(img/fondo.png);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-header{
+
+
+
+body {
+    font-family: "Alkalami", serif;
+    background-color:#fefcf0;
+    /* si no tenés img/fondo.png, este patrón de puntitos lo reemplaza */
+    background-image: radial-gradient(#f3e3d3 2px, transparent 2px);
+    background-size: 22px 22px;
+}
+
+
+header {
+    padding: 20px 0 0;
+    position: relative;
+    z-index: 10;
+    background-color: #c87d87;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header  {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #c87d87;
+    border-radius: 40px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+header a {
+    color: #fbead6;
+    text-decoration: none;
+    font-family: "Domine", serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+header  a.activo,
+header  a:hover {
+    color: #b4d8ab;
+}
+
+.logo-header {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+main .portada {
+    position: relative;
+    background-image: url(imagen/bulletfondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuestro_catalogo {
+    text-align: center;
+}
+
+.nuestro_catalogo h1 {
+    font-family: "Domine", serif;
+    font-size: 64px;
+    letter-spacing: 6px;
+    color: #6b7556;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nuestro_catalogo button {
+    margin-top: 15px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background-color: #fbead6;
+    color: #c87d87;
+    font-family: "Domine", serif;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.nuestro_catalogo button:hover {
     background-color: #c87d87;
 }
-footer{
+
+.whatsapp {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+.whatsapp img {
+    width: 55px;
+    height: 55px;
+}
+
+
+footer {
     background-color: #c87d87;
+    color: #fff;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 15px 0 8px   rgba(0, 0, 0, 0.2);
+}
+
+footer .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer .informacion {
+    flex: 1;
+    padding-left: 20px;
+}
+
+footer .informacion h3 {
+    font-family: "Domine", serif;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+footer .redes {
+    text-align: right;
+}
+
+footer .redes p {
+    font-family: "Domine", serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+footer .iconos {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+footer .iconos img {
+    width: 30px;
+
 }
